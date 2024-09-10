@@ -43,7 +43,13 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 The probability of getting these results are one out of ten thousand. Now a further investigation is needed to see which seats are different from the others. 
+```{r}
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
+The front and the back are different. The middle and the front are not different from each other but both are different from the back. The back is different from the middle and the front. 
 
 ## Conclusions
 
-
+I did a box plot that showed the visible results and differences of how much of what row drinks alcohol. Then I did a summary of the numerical results which showed that the back seat drank twice as much than the front and middle seat. I then ran an inferential test which was different than running a test comparing two categories. When there are three or more things to compare you run a qualifying test that is one way anova. When you run your inferential test and the probability is between 0 and 1 then you need to investigate further the results and run another test. The probability was between 0 and 1 and I then investigated further and plotted another model that showed how different the back seat was. 
