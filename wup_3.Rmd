@@ -30,6 +30,10 @@ The boxes are not disjoint. The median of the back box is higher than the front 
 
 ## Numerical Summarys 
 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
 ## Inferential Tests
 
 ## Conclusions
