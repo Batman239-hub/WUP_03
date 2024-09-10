@@ -31,8 +31,10 @@ The boxes are not disjoint. The median of the back box is higher than the front 
 ## Numerical Summarys 
 
 ```{r}
-favstats(alcohol~Seat,data=ucdavis1)
+favstats(alcohol~Seat,data=davisdata)
 ```
+The front and back seat has around the same number of people while the back seat has more than twice their numbers when consuming alcohol. This summary shows that while the back seat had 32 people the back seat had a max of 55 drinks which is twice the numbers of the front and middle seat consumption. The average of drinks in the back seat are at 9.6 and the drinks for the front seat are about 2 and the back seat has a median of about 3. 
+
 
 ## Inferential Tests
 
