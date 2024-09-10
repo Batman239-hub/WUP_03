@@ -38,6 +38,12 @@ The front and back seat has around the same number of people while the back seat
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+The probability of getting these results are one out of ten thousand. Now a further investigation is needed to see which seats are different from the others. 
+
 ## Conclusions
 
 
